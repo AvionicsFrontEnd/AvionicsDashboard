@@ -2,12 +2,12 @@
 
 /**
  * @ngdoc function
- * @name avionionicsDashboardApp.controller:MainCtrl
+ * @name avionicsDashboardApp.controller:MainCtrl
  * @description
  * # MainCtrl
- * Controller of the avionionicsDashboardApp
+ * Controller of the avionicsDashboardApp
  */
-angular.module('avionionicsDashboardApp')
+angular.module('avionicsDashboardApp')
   .controller('MainCtrl', function () {
     this.awesomeThings = [
       'HTML5 Boilerplate',

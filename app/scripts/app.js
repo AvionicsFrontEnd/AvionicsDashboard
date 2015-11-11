@@ -2,14 +2,14 @@
 
 /**
  * @ngdoc overview
- * @name avionionicsDashboardApp
+ * @name avionicsDashboardApp
  * @description
- * # avionionicsDashboardApp
+ * # avionicsDashboardApp
  *
  * Main module of the application.
  */
 angular
-  .module('avionionicsDashboardApp', [
+  .module('avionicsDashboardApp', [
     'ngAnimate',
     'ngCookies',
     'ngResource',
