@@ -22,6 +22,6 @@ angular.module('avionicsDashboardApp')
     }, true);
 
     // testing if d3 is working
-    d3.select("body").style("background-color", "blue");
+    d3.select("body").style("border-color", "white");
 
   }]);
