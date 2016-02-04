@@ -8,15 +8,20 @@
  * Controller of the avionicsDashboardApp
  */
 angular.module('avionicsDashboardApp')
-  .controller('MainCtrl', ['$scope', 'temperatureTimeData', function ($scope, temperatureTimeData) {
+  .controller('MainCtrl', ['$scope', 'temperatureTimeFactory', function ($scope, temperatureTimeFactory) {
     this.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',
       'Karma'
     ];
+
+    $scope.temperatureTimeData = temperatureTimeFactory;
     
-    console.log(temperatureTimeData);
+    $scope.$watch('temperatureTimeData', function(newVal, oldVal){
+        console.log(newVal);
+    }, true);
+
     // testing if d3 is working
-    d3.select("body").style("background-color", "black");
+    d3.select("body").style("background-color", "blue");
 
   }]);
