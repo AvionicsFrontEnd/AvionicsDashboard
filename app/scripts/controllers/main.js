@@ -63,8 +63,8 @@ angular.module('avionicsDashboardApp')
     plot.append("svg:g")
 	.attr("transform", "translate("+(MARGINS.left)+",0)")
 	.call(yAxis);
-    plot.append("svg:path").datum(temperatureTimeData)
-	.attr('d',line)
+    plot.append("svg:path")
+	.attr('d',line(temperatureTimeData))
 	.attr('stroke','blue')
 	.attr('stroke-width',2)
 	.attr('fill','none');
